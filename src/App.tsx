@@ -1,14 +1,15 @@
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import LandingPage from './pages/LandingPage';
 
-export default function App() {
-  
-  const testing = "testinggg";
-  return (
-    <div className='bg-gray-900 flex items-center justify-center min-h-screen'>
-        <div className="bg-gray-800 border-t border-gray-600 shadow rounded-lg max-w-lg w-full p-6">
-            <h4 className='text-white text-2xl'>Hello React {testing}</h4>
-            <p className='text-lg text-gray-400 leading-relaxed'>A JavaScript library for building user interfaces</p>
-        </div>
+function App(){
+  return(
+    <div className='app'>
+    <Routes>
+      <Route path='/' element={<LandingPage/>}/>
+    </Routes>
     </div>
-    
-  );
+  )
 }
+
+export default App;

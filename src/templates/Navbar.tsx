@@ -21,7 +21,9 @@ function Navbar(){
                 <Link to={'/Events'}>
                 <li className="mx-10">Events</li>
                 </Link>
+                <Link to={'/MyTicket'}>
                 <li className="mx-10">My ticket</li>
+                </Link>
             </ul>
             <div className="flex mr-8 items-center h-full">
                 <Link to={'/Login'}>

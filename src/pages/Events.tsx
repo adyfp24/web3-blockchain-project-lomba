@@ -1,12 +1,12 @@
 import Navbar from "../templates/Navbar"
 
-function About(){
+function Events(){
     return(
         <div>
             <Navbar/>
-            about
+            events
         </div>
     )
 }
 
-export default About
+export default Events

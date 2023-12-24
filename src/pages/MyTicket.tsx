@@ -1,12 +1,12 @@
 import Navbar from "../templates/Navbar"
 
-function About(){
+function MyTicket(){
     return(
         <div>
             <Navbar/>
-            about
+            ticket
         </div>
     )
 }
 
-export default About
+export default MyTicket

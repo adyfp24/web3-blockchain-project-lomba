@@ -2,8 +2,6 @@ import Navbar from "../templates/Navbar"
 import axios from "axios"
 import { useState } from "react";
 
-// ... (previous imports)
-
 function MyTicket() {
     const [long_url, setLongUrl] = useState("");
     const [custom_name, setCustomName] = useState("");
@@ -17,11 +15,9 @@ function MyTicket() {
           long_url,
           custom_name,
         });
-  
-        // Assuming the API response contains the short link
+
         setShortLink(response.data.short_url);
-  
-        // Clear the input fields after successful submission
+
         setLongUrl("");
         setCustomName("");
       } catch (error) {

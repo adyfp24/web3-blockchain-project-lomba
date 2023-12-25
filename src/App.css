@@ -3,4 +3,16 @@
 /* Setel font untuk seluruh body atau elemen yang Anda inginkan */
 body {
   font-family: 'Poppins', sans-serif;
+  
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
